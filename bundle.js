@@ -55,6 +55,9 @@
 
 	var _redux = __webpack_require__(2);
 
+	var reducer = (0, _redux.combineReducers)({ visibilityFilter: visibilityFilter, todos: todos });
+	var store = (0, _redux.createStore)(reducer);
+
 /***/ },
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {

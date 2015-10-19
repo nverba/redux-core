@@ -1,21 +1,21 @@
 var webpack = require('webpack');
 
 module.exports = {
-  entry: ["./app.es6"],
+  entry: ["./app.es6.js"],
   output: {
     filename: "bundle.js"
   },
   module: {
     loaders: [
       {
-        test: /\.es6$/,
+        test: /\.es6.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.es6']
+    extensions: ['', '.js']
   },
   plugins: [
     new webpack.ProvidePlugin({
